@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-top: 20px;
+    animation: slideInDown 1s ease-in-out;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+    opacity: 0.9;
+}
+
+/* Slide-in animation for header */
+@keyframes slideInDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Fade-in up animation */
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Projects */
+.projects {
+    text-align: left;
+    padding: 10px;
+}
+
+.project {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Reveal project on scroll */
+.project.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project h4 {
+    margin: 5px 0;
+    color: #0073e6;
+}
+
+.project p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Hover Effect for Links */
+a {
+    text-decoration: none;
+    color: #0073e6;
+    transition: color 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #005bb5;
+}
+
+/* Floating Button */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0073e6;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.floating-button:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background: #333;
+    color: white;
+    font-size: 0.9rem;
+}
